@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="initial-scale=2.0,width=device-width"/>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/common.css">
+		<style type="text/css">
+			.main{
+				box-sizing:border-box;
+				position:absolute;
+				width:580px;
+				padding: 30px 30px;
+				outline:solid #eeeeee thin;
+			}
+			.h1Title{
+				display:block;
+				margin:21px 0;
+			}
+			#gameLogo{
+				display: inline-block;
+				width:32px;
+				height:32px;
+			}
+			.gameTitle{
+				position:relative;	
+			}
+			#gameName,#source,#date,#gameLogo{
+				 display: inline-block;
+				 vertical-align: middle;
+				 top:0;
+			}
+			#gameName{
+				color:#333333;
+				font-size:1em;
+				padding-left: 16px;
+			}
+			#date,#source{
+				color:#999999;
+				font-size:0.74em;
+				padding-left:8px;
+				padding-right: 8px;
+			}
+			.imgbox{
+				width:100%;
+				height: 27%;
+			}
+			.title{
+				color:#333333;
+				font-size:1em;
+				padding:25px 0 16px 0;
+				margin: 0;
+			}
+			#list1{
+				padding:0;
+				margin: 0;
+			}
+			#list2{
+				padding:0;
+				margin: 0;
+			}
+			.orignWebBox{
+				width:100%;
+			}
+			.originWeb {
+				display: block;
+				padding:36px 0;
+				text-align: center;
+			}
+			aside{
+				box-sizing: border-box;
+				margin-left:670px;
+				display: flex;
+				align-items: center;
+				flex-flow: column;
+			}
+			.logofigure{
+				height: 42px;
+				width:134px;
+				margin-top:70px;
+			}
+			.logo{
+				height: 42px;
+				width:134px;
+			}
+			.figureCaption{
+				color: #777777;
+				size:0.8em;
+				height: 42px;
+				white-space: nowrap;
+			}
+			#download-btn{
+				width: 160px;
+				height:42px ;
+				border:0;
+				white-space: nowrap;
+				background-color: #ff4940;
+				border-radius:24px;
+				color:#ffffff;
+				font-size:0.5em;
+				margin-top: 85px;
+			}
+			#logo1{
+				width:160px;
+				height: 160px;
+				margin-top: 30px;
+			}
+			@media screen and (max-width :768px){
+				body{
+					margin:0;
+				}
+				.main{
+					width:100%;
+					padding:30px 10px 0px 10px;
+					margin-bottom: 70px;
+					position:relative;
+					outline: none;
+					
+				}
+				aside{
+					width:100%;
+					height: 64px;
+					margin:0px;
+					padding: 0 10px 0 10px;
+					position:fixed;
+					bottom: 0;
+					display: flex;
+					align-items: center;
+					justify-content:space-between;
+					flex-flow: row;
+					opacity: 1;
+					background-color: #eeeeee;
+				}
+				.logofigure{
+					height: 64px;
+					padding: 0;
+					margin: 15px 0 0 8px;
+					font-size: 0.8em;
+				}
+				
+				#logo1{
+					display:none;
+				}
+				.logo{
+					width:51px;
+					height: 18px;
+				
+				}
+				.figureCaption{
+					margin:0px;
+				}
+				#download-btn{
+					border:0;
+					width:64px;
+					height: 32px;
+					margin:0 10px 0 0;
+				}
+			}
+		</style>
+
+	</head>
+	<body>
+		<div class="main box-set">
+			<div class="gameTitle">
+				<img id="gameLogo"src="img/logo1.png"/>
+				<div id="gameName"><b>皇室战争</b></div>
+				<div id="date">今天</div>
+				<div id="source">来自官网</div>
+			</div>
+			<h1 class="h1Title">[翻译]2月29日更新完整内容</h1>
+			<img class="imgbox" src="img/pic1.jpg">
+			<p class="title"><b>六种新卡片</b></p>
+			<ul id="list1">
+				<li>新增1种普通卡片（白卡）：皇家巨人</li>
+				<li>新增1种稀有卡片（黄卡）：三个火枪手</li>
+				<li>新增2种史诗卡片（紫色）：暗黑王子、毒药法术</li>
+				<li>新增2种传说卡片（幻色）：公主、冰法师</li>
+			</ul>
+			<p class="title"><b>新增竞技场和宝箱</b></h2>
+			<ul id="list2">
+				<li>新增竞技场：在原5级竞技场后增加6级竞技场——建筑工人工坊、奖杯需求数1700+。原皇家竞技场升级为7级竞技场，奖杯需求2000+</li>
+				<li>新增宝箱：超大宝箱和超级神奇宝箱</li>
+				<li>牌组编辑器：可以保存至多3套战斗牌组</li>
+			</ul>
+			<div class="orignWebBox">
+				<a class="originWeb">原网页</a>
+			</div>
+		</div>
+		<aside>
+			<div class="logofigure">
+				<img class="logo"src="img/logo_text.png"/>
+				<p class="figureCaption">筛选每天最实用的游戏资讯</p>
+			</div>
+			<button id="download-btn">Android下载</button>
+			<img id="logo1"src="img/2_demetional_code.png">
+		</aside>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+body html {
+	margin:0;
+	padding:0;
+}
+body *{
+	font-size:1.0em;
+	padding: 0;
+	margin: 0;
+	color:#333333;
+}
+body{
+	
+}
+.box-set:before,
+	.box-set:after{
+ 	content:"";
+ 	display:table;
+ }
+	 .box-set:after{
+	clear:both;
+	 }
+	.box-set {
+	 
+		overflow:auto;
+	}
+	.box-set{
+		*zoom:1;
+	}
+

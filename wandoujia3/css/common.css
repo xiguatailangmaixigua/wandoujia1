@@ -1,13 +1,11 @@
-body html {
-	margin:0;
-	padding:0;
+body, html {
+    height: 100%;
+    padding:0;
+    margin:0;
 }
-body *{
-	font-size:1.0em;
-	padding: 0;
-	margin: 0;
-	color:#333333;
-}
+body {
+    font: 12px/1.5 "Lantinghei SC","Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #333;
 body{
 	
 }
@@ -15,15 +13,14 @@ body{
 	.box-set:after{
  	content:"";
  	display:table;
- }
-	 .box-set:after{
+}
+.box-set:after{
 	clear:both;
-	 }
-	.box-set {
-	 
-		overflow:auto;
-	}
-	.box-set{
-		*zoom:1;
-	}
+}
+.box-set {
+	overflow:auto;
+}
+.box-set{
+	*zoom:1;
+}
 

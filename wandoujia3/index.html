@@ -6,6 +6,12 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/common.css">
 		<style type="text/css">
+			.mainBox{
+				box-sizing: border-box;
+				width:820px;
+				padding: 30px 40px 30px 40px;
+				margin:0 auto;
+			}
 			.main{
 				box-sizing:border-box;
 				position:absolute;
@@ -13,9 +19,18 @@
 				padding: 30px 30px;
 				outline:solid #eeeeee thin;
 			}
-			.h1Title{
+			aside{
+				box-sizing: border-box;
+				margin-left:660px;
+				display: flex;
+				align-items: center;
+				flex-flow: column;
+			}
+			.pageTitle{
 				display:block;
 				margin:21px 0;
+				padding: 0;
+				font-size:2.25em
 			}
 			#gameLogo{
 				display: inline-block;
@@ -37,7 +52,7 @@
 			}
 			#date,#source{
 				color:#999999;
-				font-size:0.74em;
+				font-size:0.75em;
 				padding-left:8px;
 				padding-right: 8px;
 			}
@@ -54,27 +69,26 @@
 			#list1{
 				padding:0;
 				margin: 0;
+				font-size: 1.25em;
+				color: #555555;
 			}
 			#list2{
 				padding:0;
-				margin: 0;
+				margin: 0 0 44px 0;
+				font-size: 1.25em;
+				color: #555555;
 			}
 			.orignWebBox{
 				width:100%;
 			}
 			.originWeb {
 				display: block;
-				padding:36px 0;
+				padding:36px 0 0 0;
 				text-align: center;
+				font-size: 0.8em;
+				color: #646e72;
 			}
-			aside{
-				box-sizing: border-box;
-				margin-left:670px;
-				display: flex;
-				align-items: center;
-				flex-flow: column;
-			}
-			.logofigure{
+			.logoFigure{
 				height: 42px;
 				width:134px;
 				margin-top:70px;
@@ -106,8 +120,8 @@
 				margin-top: 30px;
 			}
 			@media screen and (max-width :768px){
-				body{
-					margin:0;
+				.mainBox{
+					width: 100%;
 				}
 				.main{
 					width:100%;
@@ -121,21 +135,24 @@
 					width:100%;
 					height: 64px;
 					margin:0px;
-					padding: 0 10px 0 10px;
+					padding: 0px;
 					position:fixed;
 					bottom: 0;
-					display: flex;
+					left: 0;
 					align-items: center;
-					justify-content:space-between;
-					flex-flow: row;
 					opacity: 1;
 					background-color: #eeeeee;
 				}
-				.logofigure{
+				.logoFigure{
 					height: 64px;
 					padding: 0;
-					margin: 15px 0 0 8px;
-					font-size: 0.8em;
+					color:#777777;
+					margin: 0;
+					font-size: 0.7em;
+					display:inline-block;
+					position: absolute;
+					top:15px;
+					left:20px;
 				}
 				
 				#logo1{
@@ -144,55 +161,61 @@
 				.logo{
 					width:51px;
 					height: 18px;
-				
 				}
 				.figureCaption{
 					margin:0px;
 				}
 				#download-btn{
+					position: absolute;
+					top:0;
 					border:0;
 					width:64px;
 					height: 32px;
-					margin:0 10px 0 0;
+					margin:0;
+					display: inline-block;
+					right:15px;
+					top:16px;
 				}
 			}
 		</style>
 
 	</head>
 	<body>
-		<div class="main box-set">
-			<div class="gameTitle">
-				<img id="gameLogo"src="img/logo1.png"/>
-				<div id="gameName"><b>皇室战争</b></div>
-				<div id="date">今天</div>
-				<div id="source">来自官网</div>
+		<div class="mainBox">
+			<div class="main box-set">
+				<div class="gameTitle">
+					<img id="gameLogo"src="img/logo1.png"/>
+					<div id="gameName"><b>皇室战争</b></div>
+					<div id="date">今天</div>
+					<div id="source">来自官网</div>
+				</div>
+				<h1 class="pageTitle">[翻译]2月29日更新完整内容</h1>
+				<img class="imgbox" src="img/pic1.jpg">
+				<p class="title"><b>六种新卡片</b></p>
+				<ul id="list1">
+					<li>新增1种普通卡片（白卡）：皇家巨人</li>
+					<li>新增1种稀有卡片（黄卡）：三个火枪手</li>
+					<li>新增2种史诗卡片（紫色）：暗黑王子、毒药法术</li>
+					<li>新增2种传说卡片（幻色）：公主、冰法师</li>
+				</ul>
+				<p class="title"><b>新增竞技场和宝箱</b></h2>
+				<ul id="list2">
+					<li>新增竞技场：在原5级竞技场后增加6级竞技场——建筑工人工坊、奖杯需求数1700+。原皇家竞技场升级为7级竞技场，奖杯需求2000+</li>
+					<li>新增宝箱：超大宝箱和超级神奇宝箱</li>
+					<li>牌组编辑器：可以保存至多3套战斗牌组</li>
+				</ul>
+				<div class="orignWebBox">
+					<a class="originWeb">原网页</a>
+				</div>
 			</div>
-			<h1 class="h1Title">[翻译]2月29日更新完整内容</h1>
-			<img class="imgbox" src="img/pic1.jpg">
-			<p class="title"><b>六种新卡片</b></p>
-			<ul id="list1">
-				<li>新增1种普通卡片（白卡）：皇家巨人</li>
-				<li>新增1种稀有卡片（黄卡）：三个火枪手</li>
-				<li>新增2种史诗卡片（紫色）：暗黑王子、毒药法术</li>
-				<li>新增2种传说卡片（幻色）：公主、冰法师</li>
-			</ul>
-			<p class="title"><b>新增竞技场和宝箱</b></h2>
-			<ul id="list2">
-				<li>新增竞技场：在原5级竞技场后增加6级竞技场——建筑工人工坊、奖杯需求数1700+。原皇家竞技场升级为7级竞技场，奖杯需求2000+</li>
-				<li>新增宝箱：超大宝箱和超级神奇宝箱</li>
-				<li>牌组编辑器：可以保存至多3套战斗牌组</li>
-			</ul>
-			<div class="orignWebBox">
-				<a class="originWeb">原网页</a>
-			</div>
+			<aside>
+				<div class="logoFigure">
+					<img class="logo"src="img/logo_text.png"/>
+					<p class="figureCaption">筛选每天最实用的游戏资讯</p>
+				</div>
+				<button id="download-btn">下载</button>
+				<img id="logo1"src="img/2_demetional_code.png">
+			</aside>
 		</div>
-		<aside>
-			<div class="logofigure">
-				<img class="logo"src="img/logo_text.png"/>
-				<p class="figureCaption">筛选每天最实用的游戏资讯</p>
-			</div>
-			<button id="download-btn">Android下载</button>
-			<img id="logo1"src="img/2_demetional_code.png">
-		</aside>
 	</body>
 </html>

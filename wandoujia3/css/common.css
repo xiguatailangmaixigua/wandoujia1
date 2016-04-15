@@ -1,14 +1,12 @@
-body, html {
-    height: 100%;
-    padding:0;
-    margin:0;
-}
+
 body {
     font: 12px/1.5 "Lantinghei SC","Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #333;
-body{
-	
+    margin: 0;
+    padding: 0;
+    background-color: #FAFCFD;
 }
+
 .box-set:before,
 	.box-set:after{
  	content:"";

@@ -1,4 +1,3 @@
-
 body {
     font: 12px/1.5 "Lantinghei SC","Microsoft Yahei","Hiragino Sans GB","Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #333;
@@ -7,18 +6,18 @@ body {
     background-color: #FAFCFD;
 }
 
-.box-set:before,
+.clearfix:before,
 	.box-set:after{
  	content:"";
  	display:table;
 }
-.box-set:after{
+.clearfix:after{
 	clear:both;
 }
-.box-set {
+.clearfix {
 	overflow:auto;
 }
-.box-set{
+.clearfix{
 	*zoom:1;
 }
 

@@ -3,90 +3,97 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-		<title></title>
+		<charset></charset>
+		<title>皇室战争</title>
 		<link rel="stylesheet" type="text/css" href="css/common.css">
 		<style type="text/css">
-			.mainBox{
+			.main-box{
 				box-sizing: border-box;
-				width:820px;
+				width:900px;
 				padding: 30px 40px;
 				margin:0 auto;
 			}
 			.main{
 				box-sizing:border-box;
 				/* todo: absolute; */
-				position:absolute; 
+				float:left;
 				width: 580px;
-				padding: 30px;
+				padding: 30px 30px 20px 30px;
 				outline:1px solid #eee;
 				background-color: #fff;
 				margin-bottom: 40px;
 			}
-			aside{
+		    .leftbox{
+				float:left;
 				box-sizing: border-box;
-				margin-left:660px;
+				margin-left:80px;
 				width: 160px;
 			}
-			.pageTitle{
+			.page-title{
 				margin:21px 0;
-				font-size:2.25em
+				padding: 0;
+				font-size:20px;
 			}
-			#gameLogo{
+			.game-logo{
 				display: inline-block;
 				width:32px;
 				height:32px;
 			}
-			#gameName,#source,#date,#gameLogo{
+			.game-name,.source,.date,.game-logo{
 				 display: inline-block;
 				 vertical-align: middle;
 			}
-			#gameName{
-				color:#333333;
-				font-size:1em;
+			.game-name{
+				color:#333;
+				font-size:16px;
 				/*todo: use margin;*/
-				padding-left: 16px;
+				margin-left: 16px;
 			}
-			#date,#source{
-				color:#999999;
-				font-size:0.75em;
+			.date,.source{
+				color:#999;
+				font-size:12px;
 				/*todo: use margin;*/
-				padding-left:8px;
-				padding-right: 8px;
+				margin-left:8px;
+				margin-right: 8px;
 			}
 			.imgbox{
 				width:100%;
+				display: block;
 			}
 			.title{
-				color:#333333;
-				font-size:1em;
+				color:#333;
+				font-size:16px;
 				padding:25px 0 16px 0;
 				margin: 0;
 			}
-			#list1{
+			.list1{
 				padding:0;
-				margin: 0;
-				font-size: 1.25em;
-				color: #555555;
+				margin: 0 0 0 15px;
+				font-size: 15px;
+				color: #555;
 			}
-			#list2{
-				padding:0;
+			.list2{
+				padding:0 0 0 15px;
 				margin: 0 0 44px 0;
-				font-size: 1.25em;
-				color: #555555;
+				font-size: 15px;
+				color: #555;
 			}
-			.orignWebBox{
+			.origin-webbox{
 				/*todo: text-align:center;*/
 				width:100%;
+				text-align:center;
 			}
-			.originWeb {
+			.origin-web {
 				/*todo: use margin padding inline-block;*/
-				display: block;
-				padding:36px 0 0 0;
+				display: inline-block;
+				padding:10px 0;
+				margin:26px 0 0;
 				text-align: center;
-				font-size: 0.8em;
+				font-size: 12px;
 				color: #646e72;
+				text-decoration:none;
 			}
-			.logoFigure{
+			.logo-figure{
 				margin-top:70px;
 				text-align: center;
 			}
@@ -96,31 +103,33 @@
 				height: 42px;
 				width:134px;
 			}
-			.figureCaption{
+			.caption{
 				color: #777777;
-				size:0.8em;
+				font-size:13px;
 				white-space: nowrap;
 			}
-			#download-btn{
+			.download-btn{
 				width: 160px;
 				height:42px ;
 				border:0;
+				padding:0;
 				white-space: nowrap;
 				background-color: #ff4940;
 				border-radius:24px;
 				color:#ffffff;
-				font-size:0.5em;
+				font-size:16px;
 				margin-top: 37px;
 			}
-			#logo1{
+			.logo1{
 				width:160px;
 				height: 160px;
 				margin-top: 30px;
 			}
 			@media screen and (max-width :768px){
-				.mainBox{
+				.main-box{
 					width: 100%;
 					padding: 0;
+					margin:0;
 				}
 				.main{
 					width:100%;
@@ -130,7 +139,10 @@
 					outline: none;
 					
 				}
-				aside{
+				.title{
+					padding:15px 0 10px;
+				}
+				.leftbox{
 					width:100%;
 					height: 64px;
 					margin:0px;
@@ -142,30 +154,32 @@
 					opacity: 1;
 					background-color: #eeeeee;
 				}
-				.logoFigure{
+				.logo-figure{
 					height: 64px;
 					padding: 0;
 					color:#777777;
 					margin: 0;
-					font-size: 0.7em;
+					font-size: 13px;
 					display:inline-block;
 					/*todo: use margin;*/
-					position: absolute;
-					top:15px;
-					left:20px;
+					margin-top:15px;
+					margin-left:20px;
+					text-align: left;
 				}
 				
-				#logo1{
+				.logo1{
 					display:none;
 				}
 				.logo{
 					width:51px;
 					height: 18px;
+					margin-left:0;
 				}
-				.figureCaption{
-					margin:0px;
+				.caption{
+					margin:4px 0 0;
+					font-size:0.9em;
 				}
-				#download-btn{
+				.download-btn{
 					position: absolute;
 					top:0;
 					border:0;
@@ -181,41 +195,41 @@
 
 	</head>
 	<body>
-		<div class="mainBox">
-			<div class="main box-set">
-				<div class="gameTitle">
-					<img id="gameLogo" src="img/logo1.png"/>
-					<div id="gameName"><b>皇室战争</b></div>
-					<div id="date">今天</div>
-					<div id="source">来自官网</div>
+		<div class="main-box clearfix">
+			<div class="main clearfix">
+				<div class="game-title">
+					<img class="game-logo" src="img/logo1.png"/>
+					<div class="game-name"><b>皇室战争</b></div>
+					<div class="date">今天</div>
+					<div class="source">来自官网</div>
 				</div>
-				<h1 class="pageTitle">[翻译]2月29日更新完整内容</h1>
-				<img class="imgbox" src="img/pic1.jpg">
+				<h1 class="page-title">[翻译]2月29日更新完整内容</h1>
+				<img class="imgbox" src="img/pic1.png">
 				<p class="title"><b>六种新卡片</b></p>
-				<ul id="list1">
+				<ul class="list1">
 					<li>新增1种普通卡片（白卡）：皇家巨人</li>
 					<li>新增1种稀有卡片（黄卡）：三个火枪手</li>
 					<li>新增2种史诗卡片（紫色）：暗黑王子、毒药法术</li>
 					<li>新增2种传说卡片（幻色）：公主、冰法师</li>
 				</ul>
 				<p class="title"><b>新增竞技场和宝箱</b></h2>
-				<ul id="list2">
+				<ul class="list2">
 					<li>新增竞技场：在原5级竞技场后增加6级竞技场——建筑工人工坊、奖杯需求数1700+。原皇家竞技场升级为7级竞技场，奖杯需求2000+</li>
 					<li>新增宝箱：超大宝箱和超级神奇宝箱</li>
 					<li>牌组编辑器：可以保存至多3套战斗牌组</li>
 				</ul>
-				<div class="orignWebBox">
-					<a class="originWeb" href="http://www.baidu.com">原网页</a>
+				<div class="origin-webbox">
+					<a class="origin-web" href="http://www.baidu.com">原网页</a>
 				</div>
 			</div>
-			<aside>
-				<div class="logoFigure">
+			<div class="leftbox">
+				<div class="logo-figure">
 					<img class="logo"src="img/logo_text.png"/>
-					<p class="figureCaption">筛选每天最实用的游戏资讯</p>
+					<p class="caption">筛选每天最实用的游戏资讯</p>
 				</div>
-				<button id="download-btn">下载</button>
-				<img id="logo1"src="img/2_demetional_code.png">
-			</aside>
+				<button class="download-btn">下载</button>
+				<img class="logo1"src="img/2_demetional_code.png">
+			</div>
 		</div>
 	</body>
 </html>
